@@ -1,0 +1,3 @@
+angka = int(input("Masukkan angka: "))    
+hasil = 10 / angka    
+print("Hasil: ", hasil)
