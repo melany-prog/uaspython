@@ -3,11 +3,11 @@ import streamlit as st
 st.title("Kalkulator Pembagian")
 
 # Input angka dari pengguna
-angka_input = int(st.text_input("Masukkan angka:"))
-angka_bagi = int(st.text_input("Masukkan angka bagi :"))
+angka_input = st.text_input("Masukkan angka:")
+angka_bagi = st.text_input("Masukkan angka bagi :")
 if angka_input:
     try:
-        hasil = float(angka_input / angka_bagi)
+        hasil = int(angka_input) / int(angka_bagi)
         st.success(f"Hasil: {hasil:.2f}")
     except ZeroDivisionError:
         st.error("Angka tidak boleh nol.")
