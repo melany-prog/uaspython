@@ -4,11 +4,11 @@ st.title("Kalkulator Pembagian")
 
 # Input angka dari pengguna
 angka_input = st.text_input("Masukkan angka:")
-
+angka_bagi = st.text_input("Masukkan angka bagi :")
 if angka_input:
     try:
         angka = int(angka_input)
-        hasil = 10 / angka
+        hasil = 10 / angka_bagi
         st.success(f"Hasil: {hasil:.2f}")
     except ZeroDivisionError:
         st.error("Angka tidak boleh nol.")
