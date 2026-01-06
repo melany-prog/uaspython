@@ -7,7 +7,7 @@ angka_input = int(st.text_input("Masukkan angka:"))
 angka_bagi = int(st.text_input("Masukkan angka bagi :"))
 if angka_input:
     try:
-        hasil = angka_input / angka_bagi
+        hasil = float(angka_input / angka_bagi)
         st.success(f"Hasil: {hasil:.2f}")
     except ZeroDivisionError:
         st.error("Angka tidak boleh nol.")
